@@ -182,6 +182,8 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 179px;
+height: 151px;
 }
 
     </style>
