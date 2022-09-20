@@ -5,7 +5,7 @@ $email = $_POST ["email"];
 $password = md5($_POST['password']); 
 
 
-$sql = "SELECT * FROM users WHERE email ='$email' AND password='$password'";
+$sql = "SELECT * FROM usuario WHERE correo ='$email' AND clave='$password'";
 $result= mysqli_query($conexion,$sql);
 
 

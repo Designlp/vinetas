@@ -4,7 +4,7 @@ $email = $_POST ["email"];
 
 
 
-$sql2 = "SELECT * FROM users WHERE email ='$email' ";
+$sql2 = "SELECT * FROM usuario WHERE correo ='$email' ";
 $result2= mysqli_query($conexion,$sql2);
 
 while($row = mysqli_fetch_array($result2)) {
@@ -13,7 +13,7 @@ while($row = mysqli_fetch_array($result2)) {
    // print_r($row);
 
     // If you want to display the results one by one
-    echo $row['Nombres'];
+    echo $row['nombre'];
     
 
         

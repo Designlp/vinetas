@@ -1,10 +1,10 @@
 <?php
 $conexion =mysqli_connect("localhost","u532654912_pdsiii","gtaV19921963","u532654912_pdsiii");
-$email = $_POST ["email"];
+$email = $_POST ["correo"];
 
 
 
-$sql2 = "SELECT * FROM users WHERE email ='$email' ";
+$sql2 = "SELECT * FROM usuario WHERE correo ='$email' ";
 $result2= mysqli_query($conexion,$sql2);
 
 while($row = mysqli_fetch_array($result2)) {

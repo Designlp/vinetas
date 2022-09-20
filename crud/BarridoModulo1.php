@@ -1,5 +1,5 @@
 <?php
-$conexion =mysqli_connect("localhost","u532654912_pdsiii","","u532654912_pdsiii");
+$conexion =mysqli_connect("localhost","u532654912_pdsiii","gtaV19921963","u532654912_pdsiii");
 $modulo = 1;
 
 
