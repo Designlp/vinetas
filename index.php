@@ -97,11 +97,8 @@ form{
     transform: translate(-50%,-50%);
     top: 50%;
     left: 25%;
-    border-radius: 5px;
-    backdrop-filter: blur(10px);
-    border: 2px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 40px rgba(8,7,16,0.9);
     padding: 50px 35px;
+    background: url("sistema/img/Ellipse.png")
 }
 form *{
     font-family: 'Poppins',sans-serif;
@@ -131,7 +128,7 @@ input{
     height: 50px;
     width: 100%;
 color: #080710;
-    background-color: rgba(255,255,255,0.27);
+    background-color: #EAF0F7;
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
