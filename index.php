@@ -56,6 +56,8 @@ if (!empty($_SESSION['active'])) {
   
   
       <style media="screen">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
       *,
 *:before,
 *:after{
@@ -69,7 +71,7 @@ body{
     
 }
 .background{
-           background: linear-gradient(to right,rgba(141,169,196,.5), rgba(19, 64, 116, .5) );
+           background: #F6F6F6;
     background-image: url("sistema/img/bg.jpg");
     width: 100%;
     height:100%;
@@ -91,7 +93,6 @@ background-attachment: fixed;
 form{
     height: 580px;
     width: 400px;
-    background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
     top: 50%;
@@ -148,7 +149,8 @@ label{
 button{
     margin-top: 25px;
     width: 100%;
-    background-color: #4A00B9;
+    background: linear-gradient(90deg, #B224EF 0%, #7579FF 100%);
+    border-radius: 15px;
     color: #f6f5ff;
     
     padding: 15px 0;
