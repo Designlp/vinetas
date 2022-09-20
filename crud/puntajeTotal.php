@@ -2,7 +2,7 @@ SELECT COUNT(*) FROM Notas WHERE idFkAlumno='4' and Puntos='5' ;
 
 <?php 
 
-$conexion =mysqli_connect("localhost","id18079492_fucks","123456xxxXXX@","id18079492_estudiantes");
+$conexion =mysqli_connect("localhost","u532654912_pdsiii","gtaV19921963","u532654912_pdsiii");
 //idNotas	idFkAlumno	IdFKPregunta	Apellido	Nombre	Usuario	Puntos
 
  $idFkAlumno = $_POST['idFkAlumno'];

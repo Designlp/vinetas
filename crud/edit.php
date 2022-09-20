@@ -1,5 +1,5 @@
 <?php
-$conexion =mysqli_connect("localhost","id18079492_fucks","123456xxxXXX@","id18079492_estudiantes");
+$conexion =mysqli_connect("localhost","u532654912_pdsiii","gtaV19921963","u532654912_pdsiii");
 $id =$_POST ["id"];
 $Nombres =$_POST ["Nombres"];
 $Apellidos =$_POST ["Apellidos"];
