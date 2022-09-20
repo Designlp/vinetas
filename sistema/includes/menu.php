@@ -5,7 +5,7 @@
 	<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
 		<div class="sidebar-brand-icon">
 		    </br>
-			<img src="img/qwer.png" width="100px">
+			<img src="img/qwer.png" width="75px">
 		</div>
 		</br>
 		<div class="sidebar-brand-text mx-3">Menu</div>
