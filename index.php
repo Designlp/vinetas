@@ -98,7 +98,7 @@ form{
     top: 50%;
     left: 25%;
     padding: 50px 35px;
-    background: url("sistema/img/Ellipse.png")
+    /* background: url("sistema/img/Ellipse.png") */
 }
 form *{
     font-family: 'Poppins',sans-serif;
