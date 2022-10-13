@@ -1,3 +1,4 @@
+<!-- Custom fonts for this template-->
 <?php
 $alert = '';
 session_start();
