@@ -23,17 +23,22 @@ if (empty($_REQUEST['id'])) {
   header("Location: lista_usuarios.php");
 }
 $idusuario = $_REQUEST['id'];
-$sql = mysqli_query($conexion, "SELECT * FROM usuario WHERE idusuario = $idusuario");
+$sql = mysqli_query($conexion, "SELECT * FROM usuario WHERE IDUsuario = $idusuario");
 $result_sql = mysqli_num_rows($sql);
 if ($result_sql == 0) {
   header("Location: lista_usuarios.php");
 } else {
   if ($data = mysqli_fetch_array($sql)) {
-    $idcliente = $data['idusuario'];
-    $nombre = $data['nombre'];
-    $correo = $data['correo'];
-    $usuario = $data['usuario'];
-    $rol = $data['rol'];
+    $idcliente = $data['IDUsuario'];
+    $nombre = $data['Nombres'];
+    $apellidos = $data['Apellidos']; 
+    $fecha_nac = $data['FechaNacimiento']; 
+    $Carnet_Identidad = $data['CarnetIdentidad']; 
+    $correo = $data['CorreoElectronico'];
+    $Telefono = $data['Telefono'];
+
+
+    $rol = $data['IDRol'];
   }
 }
 ?>
@@ -48,40 +53,53 @@ if ($result_sql == 0) {
         <?php echo isset($alert) ? $alert : ''; ?>
         <input type="hidden" name="id" value="<?php echo $idusuario; ?>">
         <div class="form-group">
-          <label for="nombre">Nombre</label>
+          <label for="nombre">Nombres</label>
           <input type="text" placeholder="Ingrese nombre" class="form-control" name="nombre" id="nombre" value="<?php echo $nombre; ?>">
-
         </div>
+
+        <div class="form-group">
+          <label for="nombre">Apellidos</label>
+          <input type="text" placeholder="Ingrese nombre" class="form-control" name="apellidos" id="apellidos" value="<?php echo $apellidos; ?>">
+        </div>
+
+        <div class="form-group">
+          <label for="nombre">Fecha Nacimiento</label>
+          <input type="text" placeholder="Ingrese nombre" class="form-control" name="apellidos" id="apellidos" value="<?php echo $fecha_nac; ?>">
+        </div>
+
+        <div class="form-group">
+          <label for="nombre">Carnet Identidad</label>
+          <input type="text" placeholder="Ingrese nombre" class="form-control" name="apellidos" id="apellidos" value="<?php echo $Carnet_Identidad; ?>">
+        </div>
+
         <div class="form-group">
           <label for="correo">Correo</label>
           <input type="text" placeholder="Ingrese correo" class="form-control" name="correo" id="correo" value="<?php echo $correo; ?>">
+        </div>
+        <div class="form-group">
+          <label for="usuario">Telefono</label>
+          <input type="text" placeholder="Ingrese usuario" class="form-control" name="Telefono" id="Telefono" value="<?php echo $Telefono; ?>">
 
         </div>
         <div class="form-group">
-          <label for="usuario">Usuario</label>
-          <input type="text" placeholder="Ingrese usuario" class="form-control" name="usuario" id="usuario" value="<?php echo $usuario; ?>">
+                    <label>Rol</label>
+                    <select name="rol" id="rol" class="form-control">
+                        <?php
+                        $query_rol = mysqli_query($conexion, " select * from roles");
+                        mysqli_close($conexion);
+                        $resultado_rol = mysqli_num_rows($query_rol);
+                        if ($resultado_rol > 0) {
+                            while ($rol = mysqli_fetch_array($query_rol)) {
+                        ?>
+                                <option value="<?php echo $rol["IDRol"]; ?>"><?php echo $rol["Rol"] ?></option>
+                        <?php
 
-        </div>
-        <div class="form-group">
-          <label for="rol">Rol</label>
-          <select name="rol" id="rol" class="form-control">
-            <option value="1" <?php
-                              if ($rol == 1) {
-                                echo "selected";
-                              }
-                              ?>>Administrador</option>
-            <option value="2" <?php
-                              if ($rol == 2) {
-                                echo "selected";
-                              }
-                              ?>>Supervisor</option>
-            <option value="3" <?php
-                              if ($rol == 3) {
-                                echo "selected";
-                              }
-                              ?>>Vendedor</option>
-          </select>
-        </div>
+                            }
+                        }
+
+                        ?>
+                    </select>
+          </div>
         <button type="submit" class="btn btn-primary"><i class="fas fa-user-edit"></i> Editar Usuario</button>
       </form>
     </div>

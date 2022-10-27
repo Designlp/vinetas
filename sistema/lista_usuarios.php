@@ -19,8 +19,9 @@
 						<tr>
 							<th>ID</th>
 							<th>NOMBRE</th>
+							<th>APELLIDOS</th>
 							<th>CORREO</th>
-							<th>USUARIO</th>
+					
 							<th>TIPO DE USUARIO</th>
 							<?php if ($_SESSION['rol'] == 1) { ?>
 							<th>ACCIONES</th>
@@ -31,20 +32,22 @@
 						<?php
 						include "../conexion.php";
 
-						$query = mysqli_query($conexion, "SELECT u.idusuario, u.nombre, u.correo, u.usuario, r.rol FROM usuario u INNER JOIN rol r ON u.rol = r.idrol");
+						$query = mysqli_query($conexion, "SELECT u.IDUsuario, u.Nombres, u.Apellidos, u.CorreoElectronico,r.IDRol,r.Rol 
+      
+						FROM usuario u INNER JOIN roles r ON u.IDRol = r.IDRol");
 						$result = mysqli_num_rows($query);
 						if ($result > 0) {
 							while ($data = mysqli_fetch_assoc($query)) { ?>
 								<tr>
-									<td><?php echo $data['idusuario']; ?></td>
-									<td><?php echo $data['nombre']; ?></td>
-									<td><?php echo $data['correo']; ?></td>
-									<td><?php echo $data['usuario']; ?></td>
-									<td><?php echo $data['rol']; ?></td>
+									<td><?php echo $data['IDUsuario']; ?></td>
+									<td><?php echo $data['Nombres']; ?></td>
+									<td><?php echo $data['Apellidos']; ?></td>
+									<td><?php echo $data['CorreoElectronico']; ?></td>
+									<td><?php echo $data['Rol']; ?></td>
 									<?php if ($_SESSION['rol'] == 1) { ?>
 									<td>
-										<a href="editar_usuario.php?id=<?php echo $data['idusuario']; ?>" class="btn btn-success"><i class='fas fa-edit'></i> Editar</a>
-										<form action="eliminar_usuario.php?id=<?php echo $data['idusuario']; ?>" method="post" class="confirmar d-inline">
+										<a href="editar_usuario.php?id=<?php echo $data['IDUsuario']; ?>" class="btn btn-success"><i class='fas fa-edit'></i> Editar</a>
+										<form action="eliminar_usuario.php?id=<?php echo $data['IDUsuario']; ?>" method="post" class="confirmar d-inline">
 											<button class="btn btn-danger" type="submit"><i class='fas fa-trash-alt'></i> </button>
 										</form>
 									</td>

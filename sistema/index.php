@@ -17,7 +17,7 @@
 				<div class="card-body">
 					<div class="row no-gutters align-items-center">
 						<div class="col mr-2">
-							<div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Usuarios</div>
+							<div class="text-xs font-weight-bold text-primary text-uppercase mb-1">ADMINISTRADORES</div>
 							
 							
 							<div class="h5 mb-0 font-weight-bold text-gray-800">
@@ -45,13 +45,13 @@
 				<div class="card-body">
 					<div class="row no-gutters align-items-center">
 						<div class="col mr-2">
-							<div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Alumnos</div>
+							<div class="text-xs font-weight-bold text-danger text-uppercase mb-1">EMPLEADOS</div>
 							
 							
 							<div class="h5 mb-0 font-weight-bold text-gray-800">
 							<?php
             					include "../conexion.php";
-            			     		 $query = mysqli_query($conexion, "SELECT count(*) as total FROM  users");
+            			     		 $query = mysqli_query($conexion, "SELECT count(*) as total FROM  usuario");
 					    			while ($data = mysqli_fetch_assoc($query)) {
 									 echo $data['total'];
 								 } 
@@ -73,7 +73,7 @@
 				<div class="card-body">
 					<div class="row no-gutters align-items-center">
 						<div class="col mr-2">
-							<div class="text-xs font-weight-bold text-info text-uppercase mb-1">Lecciones</div>
+							<div class="text-xs font-weight-bold text-info text-uppercase mb-1">PASANTES</div>
 							<div class="h5 mb-0 font-weight-bold text-gray-800">
 							<?php
             					include "../conexion.php";
@@ -99,7 +99,7 @@
 				<div class="card-body">
 					<div class="row no-gutters align-items-center">
 						<div class="col mr-2">
-							<div class="text-xs font-weight-bold text-success text-uppercase mb-1">Preguntas</div>
+							<div class="text-xs font-weight-bold text-success text-uppercase mb-1">VICITANTES TERCEROS</div>
 							<div class="h5 mb-0 font-weight-bold text-gray-800">
 							<?php
             					include "../conexion.php";
@@ -135,17 +135,21 @@
 				</div>
 				<div class="card-body">
 					<div class="form-group">
-						<label>Nombre: <strong><?php echo $_SESSION['nombre']; ?></strong></label>
+						<label>Nombre: <strong><?php echo $_SESSION['Nombres']; ?></strong></label>
 					</div>
 					<div class="form-group">
-						<label>Correo: <strong><?php echo $_SESSION['email']; ?></strong></label>
+						<label>Apellidos: <strong><?php echo $_SESSION['Apellidos']; ?></strong></label>
 					</div>
+
+					<div class="form-group">
+						<label>Correo: <strong><?php echo $_SESSION['Correo']; ?></strong></label>
+					</div>
+
+
 					<div class="form-group">
 						<label>Rol: <strong><?php echo $_SESSION['rol_name']; ?></strong></label>
 					</div>
-					<div class="form-group">
-						<label>Usuario: <strong><?php echo $_SESSION['user']; ?></strong></label>
-					</div>
+			
 					<ul class="list-group">
 						<li class="list-group-item active">Cambiar Contraseña</li>
 						<form action="" method=" post" name="frmChangePass" id="frmChangePass" class="p-3">

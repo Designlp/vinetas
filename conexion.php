@@ -1,9 +1,9 @@
 <?php
 
     $host = "localhost";
-    $user = "u532654912_pdsiii";
-    $clave = "gtaV19921963";
-    $bd = "u532654912_pdsiii";
+    $user = "root";
+    $clave = "";
+    $bd = "vinietas_sys";
     
 $conexion = mysqli_connect($host,$user,$clave,$bd);
     if (mysqli_connect_errno()){

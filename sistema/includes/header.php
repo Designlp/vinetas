@@ -45,7 +45,7 @@ if ($row_empresa > 0) {
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Instituto Tecnologíco Puerto de Mejillones</title>
+	<title>Vinietas</title>
 
 	<!-- Custom styles for this template-->
 	<link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -101,7 +101,7 @@ if ($row_empresa > 0) {
 						<i class="fa fa-bars"></i>
 					</button>
 					<div class="input-group">
-						<h6>Sistema de Notas</h6>
+						<h6>Sistema de QR</h6>
 						<p class="ml-auto"><strong>La Paz, </strong><?php echo fechaPeru(); ?></p>
 					</div>
 
@@ -113,13 +113,13 @@ if ($row_empresa > 0) {
 						<!-- Nav Item - User Information -->
 						<li class="nav-item dropdown no-arrow">
 							<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<span class="mr-2 d-none d-lg-inline small text-white"><?php echo $_SESSION['nombre']; ?></span>
+								<span class="mr-2 d-none d-lg-inline small text-white"><?php echo $_SESSION['Nombres']; ?></span>
 							</a>
 							<!-- Dropdown - User Information -->
 							<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
 								<a class="dropdown-item" href="#">
 									<i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-									<?php echo $_SESSION['email']; ?>
+									<?php echo $_SESSION['Correo']; ?>
 								</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="salir.php">

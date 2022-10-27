@@ -95,11 +95,135 @@
 			<div id="collapseUsuarios" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 				<div class="bg-white py-2 collapse-inner rounded">
 					<a class="collapse-item" href="registro_usuario.php">Nuevo Empleados</a>
+					<a class="collapse-item" href="registro_dependencia.php">Nueva Dependecia</a>
 					<a class="collapse-item" href="lista_usuarios.php">Listado Empleados</a>
+					<a class="collapse-item" href="lista_dependecia.php">Listado Dependencias</a>
 				</div>
 			</div>
 		</li>
 
+		<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePregunta" aria-expanded="true" aria-controls="collapseUtilities">
+			<i class="fas fa-id-badge"></i>
+			<span>Generar QR</span>
+		</a>
+		<div id="collapsePregunta" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+				<a class="collapse-item" href="registro_QR.php">Nuevo QR</a>
+				<a class="collapse-item" href="lista_QR.php">Listado de QR</a>
+			</div>
+		</div>
+
+		<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDependencias" aria-expanded="true" aria-controls="collapseDependencias">
+			<i class="fas fa-atom"></i>
+			<span>Dependencias</span>
+		</a>
+		
+		<div id="collapseDependencias" class="collapse" aria-labelledby="headingDependencias" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+				<a class="collapse-item" href="registro_dependencia2.php">Nueva Dependencia</a>
+				<a class="collapse-item" href="lista_dependencia2.php">Listado de Dependencia</a>
+			</div>
+		</div>
+		</li>
+	</li>
+
+	<?php } ?>
+
+
+
+	<?php if ($_SESSION['rol'] == 2) { ?>
+		<!-- Nav Item - Usuarios Collapse Menu -->
+		<li class="nav-item">
+			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUsuarios" aria-expanded="true" aria-controls="collapseUtilities">
+				<i class="fas fa-user"></i>
+				<span>Usuarios/Empleados</span>
+			</a>
+			<div id="collapseUsuarios" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+				<div class="bg-white py-2 collapse-inner rounded">
+					<a class="collapse-item" href="registro_usuario.php">Nuevo Empleados</a>
+					<a class="collapse-item" href="registro_dependencia.php">Nueva Dependecia </a>
+					<a class="collapse-item" href="lista_usuarios.php">Listado Empleados</a>
+					<a class="collapse-item" href="lista_dependecia.php">Listado Dependencias </a>
+				</div>
+			</div>
+		</li>
+
+		<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePregunta" aria-expanded="true" aria-controls="collapseUtilities">
+			<i class="fas fa-id-badge"></i>
+			<span>Generar QR</span>
+		</a>
+		<div id="collapsePregunta" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+				<a class="collapse-item" href="registro_QR.php">Nuevo QR</a>
+				<a class="collapse-item" href="lista_QR.php">Listado de QR</a>
+			</div>
+		</div>
+
+		<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDependencias" aria-expanded="true" aria-controls="collapseDependencias">
+			<i class="fas fa-atom"></i>
+			<span>Dependencias</span>
+		</a>
+		
+		<div id="collapseDependencias" class="collapse" aria-labelledby="headingDependencias" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+
+				<a class="collapse-item" href="lista_dependencia2.php">Listado de Dependencia</a>
+			</div>
+		</div>
+		</li>
+	</li>
+
+
+
+
+	<?php } ?>
+
+	<?php if ($_SESSION['rol'] == 3) { ?>
+		<!-- Nav Item - Usuarios Collapse Menu -->
+		<li class="nav-item">
+			<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUsuarios" aria-expanded="true" aria-controls="collapseUtilities">
+				<i class="fas fa-user"></i>
+				<span>Usuarios/Empleados</span>
+			</a>
+			<div id="collapseUsuarios" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+				<div class="bg-white py-2 collapse-inner rounded">
+			
+					<a class="collapse-item" href="lista_usuarios.php">Listado Empleados</a>
+					<a class="collapse-item" href="lista_dependecia.php">Listado Dependencias</a>
+				</div>
+			</div>
+		</li>
+
+		<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePregunta" aria-expanded="true" aria-controls="collapseUtilities">
+			<i class="fas fa-id-badge"></i>
+			<span>Generar QR</span>
+		</a>
+		<div id="collapsePregunta" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+			
+				<a class="collapse-item" href="lista_QR.php">Listado de QR</a>
+			</div>
+		</div>
+
+		<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDependencias" aria-expanded="true" aria-controls="collapseDependencias">
+			<i class="fas fa-atom"></i>
+			<span>Dependencias</span>
+		</a>
+		
+		<div id="collapseDependencias" class="collapse" aria-labelledby="headingDependencias" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+
+				<a class="collapse-item" href="lista_dependencia2.php">Listado de Dependencia</a>
+			</div>
+		</div>
+		</li>
+	</li>
 
 
 

@@ -1,4 +1,3 @@
-<!-- Custom fonts for this template-->
 <?php
 $alert = '';
 session_start();
@@ -14,18 +13,23 @@ if (!empty($_SESSION['active'])) {
       require_once "conexion.php";
       $user = mysqli_real_escape_string($conexion, $_POST['usuario']);
       $clave = md5(mysqli_real_escape_string($conexion, $_POST['clave']));
-      $query = mysqli_query($conexion, "SELECT u.idusuario, u.nombre, u.correo,u.usuario,r.idrol,r.rol FROM usuario u INNER JOIN rol r ON u.rol = r.idrol WHERE u.usuario = '$user' AND u.clave = '$clave'");
+      $query = mysqli_query($conexion, "SELECT u.IDUsuario, u.Nombres, u.Apellidos, u.CorreoElectronico,r.IDRol,r.Rol 
+      
+      FROM usuario u INNER JOIN roles r ON u.IDRol = r.IDRol WHERE u.CorreoElectronico = '$user' AND u.Contrasena = '$clave'");
       mysqli_close($conexion);
       $resultado = mysqli_num_rows($query);
       if ($resultado > 0) {
         $dato = mysqli_fetch_array($query);
         $_SESSION['active'] = true;
-        $_SESSION['idUser'] = $dato['idusuario'];
-        $_SESSION['nombre'] = $dato['nombre'];
-        $_SESSION['email'] = $dato['correo'];
-        $_SESSION['user'] = $dato['usuario'];
-        $_SESSION['rol'] = $dato['idrol'];
-        $_SESSION['rol_name'] = $dato['rol'];
+        $_SESSION['IdUser'] = $dato['IDUsuario'];
+        $_SESSION['Nombres'] = $dato['Nombres'];
+        $_SESSION['Apellidos'] = $dato['Apellidos'];
+        $_SESSION['Correo'] = $dato['CorreoElectronico'];
+
+
+        $_SESSION['CarnetIdentidad'] = $dato['CarnetIdentidad'];
+        $_SESSION['rol'] = $dato['IDRol'];
+        $_SESSION['rol_name'] = $dato['Rol'];
         header('location: sistema/');
       } else {
         $alert = '<div class="alert alert-danger" role="alert">

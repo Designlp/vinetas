@@ -56,52 +56,55 @@ if (!empty($_POST)) {
             <form action="" method="post" autocomplete="off">
                 <?php echo isset($alert) ? $alert : ''; ?>
                 <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" placeholder="Ingrese Nombre Comleto" name="nombre" id="nombre">
+                <label for="nombre">Nombres</label>
+                <input type="text" placeholder="Ingrese sus Nombres" class="form-control" name="nombre" id="nombre" >
                 </div>
-                <div class="form-group">
-                    <label for="correo">Correo</label>
-                    <input type="email" class="form-control" placeholder="Ingrese Correo Electrónico" name="correo" id="correo">
-                </div>
-                <div class="form-group">
-                    <label for="usuario">Usuario</label>
-                    <input type="text" class="form-control" placeholder="Ingrese Usuario" name="usuario" id="usuario">
-                </div>
-                <div class="form-group">
-                    <label for="clave">Contraseña</label>
-                    <input type="password" class="form-control" placeholder="Ingrese Contraseña" name="clave" id="clave">
-                </div>
-                
-                     <div class="form-group">
-                    <label for="clave">CI</label>
-                    <input type="number" class="form-control" placeholder="Ingrese Carnet Identidad" name="ci" id="ci">
-                </div>
-                
-                <div class="form-group">
-                    <label for="clave">Celular/Telefono</label>
-                    <input type="number" class="form-control" placeholder="Ingrese Telefono/Celular" name="tel" id="tel">
-                </div>
-                
-                
-                <div class="form-group">
-                    <label>Rol</label>
-                    <select name="rol" id="rol" class="form-control">
-                        <?php
-                        $query_rol = mysqli_query($conexion, " select * from rol");
-                        mysqli_close($conexion);
-                        $resultado_rol = mysqli_num_rows($query_rol);
-                        if ($resultado_rol > 0) {
-                            while ($rol = mysqli_fetch_array($query_rol)) {
-                        ?>
-                                <option value="<?php echo $rol["idrol"]; ?>"><?php echo $rol["rol"] ?></option>
-                        <?php
 
-                            }
-                        }
+                <div class="form-group">
+                <label for="nombre">Apellidos</label>
+                <input type="text" placeholder="Ingrese sus Apellidos" class="form-control" name="apellidos" id="apellidos">
+                </div>
 
-                        ?>
-                    </select></div>
-                    
+                <div class="form-group">
+                <label for="nombre">Fecha Nacimiento</label>
+                <input type="date" class="form-control" name="apellidos" id="apellidos" >
+                </div>
+
+                <div class="form-group">
+                <label for="nombre">Carnet Identidad</label>
+                <input type="text" placeholder="Ingrese su Carnet Identidad" class="form-control" name="apellidos" id="apellidos">
+                </div>
+
+                <div class="form-group">
+                <label for="correo">Correo</label>
+                <input type="email" placeholder="Ingrese correo" class="form-control" name="correo" id="correo">
+                </div>
+                <div class="form-group">
+                <label for="Telefono">Telefono</label>
+                <input type="number" placeholder="Ingrese Celular o Telefono" class="form-control" name="Telefono" id="Telefono">
+
+                </div>
+                <div class="form-group">
+                   
+                            <select name="rol" id="rol" class="form-control">
+                            <option>---Selecciona un Rol---</option>   
+                                <?php
+                                $query_rol = mysqli_query($conexion, " select * from roles");
+                                mysqli_close($conexion);
+                                $resultado_rol = mysqli_num_rows($query_rol);
+                                if ($resultado_rol > 0) {
+                                    while ($rol = mysqli_fetch_array($query_rol)) {
+                                ?>
+                                        <option value="<?php echo $rol["IDRol"]; ?>"><?php echo $rol["Rol"] ?></option>
+                                <?php
+
+                                    }
+                                }
+
+                                ?>
+                            </select>
+                </div>
+                            
                     
                     
                     
