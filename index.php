@@ -52,7 +52,7 @@ if (!empty($_SESSION['active'])) {
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>INICIO</title>
+  <title>INICIO Design</title>
 
   <!-- Custom fonts for this template-->
      <!--  <link href="sistema/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">-->
