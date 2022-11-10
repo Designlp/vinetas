@@ -127,6 +127,21 @@
 			</div>
 		</div>
 		</li>
+
+	<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDependencias" aria-expanded="true" aria-controls="collapseDependencias">
+			<i class="fas fa-atom"></i>
+			<span>Dependencias</span>
+		</a>
+		
+		<div id="collapseDependencias" class="collapse" aria-labelledby="headingDependencias" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+				<a class="collapse-item" href="registro_dependencia2.php">Nueva Dependencia</a>
+				<a class="collapse-item" href="lista_dependencia2.php">Listado de Dependencia</a>
+			</div>
+		</div>
+		</li>
+
 	</li>
 
 	<?php } ?>
