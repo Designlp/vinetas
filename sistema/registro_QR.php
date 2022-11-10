@@ -113,9 +113,7 @@
                 var lineas = $("#idusuario option:selected").val();
                 alert("qr:"+lineas);
                 $("#qrcode").val("");
-                $("#codigos").val("");
-                $("#codigos").val(lineas);
-
+             
                // $("#codigo").on('input',function(){    <meta http-equiv="refresh" content="2;url=lista_carrera.php">
               
 
@@ -125,9 +123,9 @@
                 });
 
                 
-                var valor = $("#codigos").val();
+                var valor = $("#idusuario option:selected").val();
 
-                var hash = CryptoJS.MD5("valor");
+                var hash = CryptoJS.MD5(valor);
                 
                 $("#codigos").val(hash);
                 alert(hash);
