@@ -128,16 +128,16 @@
 		</div>
 		</li>
 
-	<li class="nav-item">
-		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDependencias" aria-expanded="true" aria-controls="collapseDependencias">
+		<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAsistencias" aria-expanded="true" aria-controls="collapseAsistencias">
 			<i class="fas fa-atom"></i>
-			<span>Dependencias</span>
+			<span>Asistencias</span>
 		</a>
 		
-		<div id="collapseDependencias" class="collapse" aria-labelledby="headingDependencias" data-parent="#accordionSidebar">
+		<div id="collapseAsistencias" class="collapse" aria-labelledby="headingDependencias" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
-				<a class="collapse-item" href="registro_dependencia2.php">Nueva Dependencia</a>
-				<a class="collapse-item" href="lista_dependencia2.php">Listado de Dependencia</a>
+				<a class="collapse-item" href="registro_dependencia2.php">Asistencias Empleados</a>
+				<a class="collapse-item" href="lista_dependencia2.php">Asistencias Pasantes</a>
 			</div>
 		</div>
 		</li>
