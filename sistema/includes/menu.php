@@ -158,7 +158,7 @@
 			<div id="collapseUsuarios" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 				<div class="bg-white py-2 collapse-inner rounded">
 					<a class="collapse-item" href="registro_usuario.php">Nuevo Empleados</a>
-					<a class="collapse-item" href="registro_dependencia.php">Nueva Dependecia </a>
+					<a class="collapse-item" href="registro_dependencia.php">Asignar Dependecia </a>
 					<a class="collapse-item" href="lista_usuarios.php">Listado Empleados</a>
 					<a class="collapse-item" href="lista_dependecia.php">Listado Dependencias </a>
 				</div>
