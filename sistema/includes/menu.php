@@ -112,7 +112,7 @@
 				<a class="collapse-item" href="registro_QR.php">Nuevo QR</a>
 				<a class="collapse-item" href="lista_QR.php">Listado de QR</a>
 			</div>
-		</div>
+		</div> 
 
 		<li class="nav-item">
 		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDependencias" aria-expanded="true" aria-controls="collapseDependencias">
