@@ -34,7 +34,7 @@
 						include "../conexion.php";
 
 						$query = mysqli_query($conexion, "SELECT IDDependencia,Dependencia
-						FROM Dependencia 
+						FROM dependencia 
 										");
 						$result = mysqli_num_rows($query);
 						if ($result > 0) {
