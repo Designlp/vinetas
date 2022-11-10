@@ -122,8 +122,8 @@
 		
 		<div id="collapseDependencias" class="collapse" aria-labelledby="headingDependencias" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
-				<a class="collapse-item" href="registro_dependencia2.php">Nueva Dependencia</a>
-				<a class="collapse-item" href="lista_dependencia2.php">Listado de Dependencia</a>
+				<a class="collapse-item" href="lista_asis_emp.php">Nueva Dependencia</a>
+				<a class="collapse-item" href="lista_asis_pas.php">Listado de Dependencia</a>
 			</div>
 		</div>
 		</li>
