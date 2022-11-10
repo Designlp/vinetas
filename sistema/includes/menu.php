@@ -134,10 +134,10 @@
 			<span>Asistencias</span>
 		</a>
 		
-		<div id="collapseAsistencias" class="collapse" aria-labelledby="headingDependencias" data-parent="#accordionSidebar">
+		<div id="collapseAsistencias" class="collapse" aria-labelledby="headingAsistencias" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
-				<a class="collapse-item" href="registro_dependencia2.php">Asistencias Empleados</a>
-				<a class="collapse-item" href="lista_dependencia2.php">Asistencias Pasantes</a>
+				<a class="collapse-item" href="lista_asis_emp.php">Asistencias Empleados</a>
+				<a class="collapse-item" href="lista_asis_pas.php">Asistencias Pasantes</a>
 			</div>
 		</div>
 		</li>
@@ -187,6 +187,20 @@
 			<div class="bg-white py-2 collapse-inner rounded">
 
 				<a class="collapse-item" href="lista_dependencia2.php">Listado de Dependencia</a>
+			</div>
+		</div>
+		</li>
+
+		<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAsistencias" aria-expanded="true" aria-controls="collapseAsistencias">
+			<i class="fas fa-atom"></i>
+			<span>Asistencias</span>
+		</a>
+		
+		<div id="collapseAsistencias" class="collapse" aria-labelledby="headingAsistencias" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+				<a class="collapse-item" href="lista_asis_emp.php">Asistencias Empleados</a>
+				<a class="collapse-item" href="lista_asis_pas.php">Asistencias Pasantes</a>
 			</div>
 		</div>
 		</li>
