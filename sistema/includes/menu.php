@@ -130,7 +130,7 @@
 
 		<li class="nav-item">
 		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseAsistencias" aria-expanded="true" aria-controls="collapseAsistencias">
-			<i class="fas fa-atom"></i>
+			<i class="fas fa-clock"></i>
 			<span>Asistencias</span>
 		</a>
 		
