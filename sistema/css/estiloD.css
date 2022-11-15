@@ -8,13 +8,25 @@
     background-color: #747474 !important;
     border: none;
     border-radius: 0px;
+    padding: 24px;
 }
 body{
-    color: aliceblue !important;
+    color: #fff !important;
 }
 .bg-white{
     background-color: #454545 !important;
 }
 .text-gray-800{
     color:  rgb(180, 180, 180) !important;
+}
+
+.sidebar .nav-item .collapse .collapse-inner .collapse-item, .sidebar .nav-item .collapsing .collapse-inner .collapse-item{
+    color: #fff !important;
+}
+.card{
+    background-color: #747474 !important;
+}
+
+input {
+    color #fff !important
 }
