@@ -9,12 +9,15 @@ if (!empty($_POST)) {
     } else {
 
         $nombre = $_POST['nombre'];
+        $apellido = $_POST['apellidos'];
         $correo = $_POST['correo'];
+        $fecha = $_POST['fecha'];
+
         $usuario = $_POST['usuario'];
-        $ci = $_POST['ci'];
-        $tel = $_POST['tel'];
+        $carnet = $_POST['carnet'];
+        $tel = $_POST['Telefono'];
         
-        $clave = md5($_POST['clave']);
+        $passw = md5($_POST['clave']);
         
         
         $rol = $_POST['rol'];
@@ -27,7 +30,10 @@ if (!empty($_POST)) {
                         El correo ya existe
                     </div>';
         } else {
-            $query_insert = mysqli_query($conexion, "INSERT INTO usuario(nombre,correo,usuario,CI,tel,clave,rol) values ('$nombre', '$correo', '$usuario', '$ci',  $tel ,  '$clave',    '$rol')");
+            $query_insert = mysqli_query($conexion, "INSERT INTO usuario(Nombres,Apellidos,FechaNacimiento,
+            CarnetIdentidad,CorreoElectronico,Contrasena,Telefono,Estado,IDQr,IDRol) values ('$nombre', '$apellido', '$fecha',  '$carnet', '$correo', '$passw',  '$tel' ,
+            '1','1','$rol'
+            '$rol')");
             if ($query_insert) {
                 $alert = '<div class="alert alert-primary" role="alert">
                             Usuario registrado
@@ -67,12 +73,17 @@ if (!empty($_POST)) {
 
                 <div class="form-group">
                 <label for="nombre">Fecha Nacimiento</label>
-                <input type="date" class="form-control" name="apellidos" id="apellidos" >
+                <input type="date" class="form-control" name="fecha" id="fecha" >
                 </div>
 
                 <div class="form-group">
                 <label for="nombre">Carnet Identidad</label>
-                <input type="text" placeholder="Ingrese su Carnet Identidad" class="form-control" name="apellidos" id="apellidos">
+                <input type="text" placeholder="Ingrese su Carnet Identidad" class="form-control" name="carnet" id="carnet">
+                </div>
+                
+                <div class="form-group">
+                <label for="nombre">Contraseña</label>
+                <input type="password" placeholder="Ingrese su Carnet Identidad" class="form-control" name="passw" id="passw">
                 </div>
 
                 <div class="form-group">
