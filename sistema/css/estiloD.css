@@ -38,3 +38,11 @@ a{color:#fff !important};
 .sidebar .nav-item .collapse .collapse-inner .collapse-item:hover, .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover{
     background-color: #974AF6 !important;
 }
+
+
+.form-control::-webkit-input-placeholder{color:#fff !important;opacity:1}
+.form-control::-moz-placeholder{color:#fff !important;opacity:1}
+.form-control:-ms-input-placeholder{color:#fff !important;opacity:1}
+.form-control::-ms-input-placeholder{color:#fff !important;opacity:1}
+.form-control::placeholder{color:#fff !important;opacity:1}
+.form-control:disabled,.form-control[readonly]{background-color:#fff !important;opacity:1}
