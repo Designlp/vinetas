@@ -9,6 +9,7 @@
     border: none;
     border-radius: 0px;
     padding: 24px;
+    color: #fff !important;
 }
 body{
     color: #fff !important;
@@ -30,3 +31,5 @@ body{
 input {
     color: #fff !important;
 }
+
+a{color:#fff !important};
