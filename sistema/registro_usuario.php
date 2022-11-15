@@ -2,7 +2,7 @@
 include "../conexion.php";
 if (!empty($_POST)) {
     $alert = "";
-    if (empty($_POST['nombre']) || empty($_POST['usuario']) || empty($_POST['clave']) || empty($_POST['rol'])) {
+    if (empty($_POST['nombre']) ||  empty($_POST['passw'])) {
         $alert = '<div class="alert alert-primary" role="alert">
                     Todo los campos son obligatorios
                 </div>';
@@ -13,16 +13,16 @@ if (!empty($_POST)) {
         $correo = $_POST['correo'];
         $fecha = $_POST['fecha'];
 
-        $usuario = $_POST['usuario'];
+
         $carnet = $_POST['carnet'];
         $tel = $_POST['Telefono'];
         
-        $passw = md5($_POST['clave']);
+        $passw = md5($_POST['passw']);
         
         
         $rol = $_POST['rol'];
 
-        $query = mysqli_query($conexion, "SELECT * FROM usuario where correo = '$correo'");
+        $query = mysqli_query($conexion, "SELECT * FROM usuario where CorreoElectronico = '$correo'");
         $result = mysqli_fetch_array($query);
 
         if ($result > 0) {
@@ -32,8 +32,7 @@ if (!empty($_POST)) {
         } else {
             $query_insert = mysqli_query($conexion, "INSERT INTO usuario(Nombres,Apellidos,FechaNacimiento,
             CarnetIdentidad,CorreoElectronico,Contrasena,Telefono,Estado,IDQr,IDRol) values ('$nombre', '$apellido', '$fecha',  '$carnet', '$correo', '$passw',  '$tel' ,
-            '1','1','$rol'
-            '$rol')");
+            '1','1','$rol')");
             if ($query_insert) {
                 $alert = '<div class="alert alert-primary" role="alert">
                             Usuario registrado
@@ -83,12 +82,12 @@ if (!empty($_POST)) {
                 
                 <div class="form-group">
                 <label for="nombre">Contraseña</label>
-                <input type="password" placeholder="Ingrese su Carnet Identidad" class="form-control" name="passw" id="passw">
+                <input type="password" placeholder="Ingrese su Contraseña" class="form-control" name="passw" id="passw">
                 </div>
 
                 <div class="form-group">
                 <label for="correo">Correo</label>
-                <input type="email" placeholder="Ingrese correo" class="form-control" name="correo" id="correo">
+                <input type="email" placeholder="Ingrese correo electronico" class="form-control" name="correo" id="correo">
                 </div>
                 <div class="form-group">
                 <label for="Telefono">Telefono</label>
