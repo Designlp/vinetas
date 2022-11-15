@@ -26,6 +26,8 @@ body{
 }
 .card{
     background-color: #525252 !important;
+    border: none !important;
+    border-radius: none !important;
 }
 
 input {
