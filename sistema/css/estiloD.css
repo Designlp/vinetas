@@ -5,8 +5,14 @@
     background-color: #454545 !important;
 }
 .form-control{
-    background-color: #454545 !important;
+    background-color: #747474 !important;
 }
 body{
     color: aliceblue !important;
+}
+.bg-white{
+    background-color: #454545 !important;
+}
+.text-gray-800{
+    color:  #fff !important;
 }
