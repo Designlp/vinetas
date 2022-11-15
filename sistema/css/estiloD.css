@@ -59,7 +59,8 @@ a{color:#fff !important};
 
 .table .thead-dark th{
     background-color: #974AF6 !important;
-    border-color: #fff !important
+    border-color: none !important;
+    border: none !important;
 }
 
 .form-control::-webkit-input-placeholder{color:#fff !important;opacity:1}
