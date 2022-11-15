@@ -1,3 +1,12 @@
 #wrapper #content-wrapper{
-    background-color: red !important;
+    background-color: #454545 !important;
+}
+.bg-gradient-primary{
+    background-color: #454545 !important;
+}
+.form-control{
+    background-color: #454545 !important;
+}
+body{
+    color: aliceblue !important;
 }
