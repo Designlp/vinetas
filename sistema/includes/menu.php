@@ -110,7 +110,7 @@
 		<div id="collapsePregunta" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<a class="collapse-item" href="registro_QR.php">Nuevo QR</a>
-				<a class="collapse-item" href="lista_QR.php">Listado de QR</a>
+				<!-- <a class="collapse-item" href="lista_QR.php">Listado de QR</a> -->
 			</div>
 		</div> 
 
