@@ -33,3 +33,8 @@ input {
 }
 
 a{color:#fff !important};
+
+
+.sidebar .nav-item .collapse .collapse-inner .collapse-item:hover, .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover{
+    background: #974AF6 !important;
+}
