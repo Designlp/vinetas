@@ -48,6 +48,10 @@ a{color:#fff !important};
     border-radius: none !important;
 }
 
+.dropdown-item:focus, .dropdown-item:hover{
+    background-color: #6624b8 !important;
+}
+
 .form-control::-webkit-input-placeholder{color:#fff !important;opacity:1}
 .form-control::-moz-placeholder{color:#fff !important;opacity:1}
 .form-control:-ms-input-placeholder{color:#fff !important;opacity:1}
