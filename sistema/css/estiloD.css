@@ -6,6 +6,8 @@
 }
 .form-control{
     background-color: #747474 !important;
+    border: none;
+    border-radius: 0px;
 }
 body{
     color: aliceblue !important;
@@ -14,5 +16,5 @@ body{
     background-color: #454545 !important;
 }
 .text-gray-800{
-    color:  #fff !important;
+    color:  rgb(180, 180, 180) !important;
 }
