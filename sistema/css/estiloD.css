@@ -43,9 +43,9 @@ a{color:#fff !important};
 
 
 .dropdown-menu{
-    background-color: #974AF6;
-    border: none;
-    border-radius: none;
+    background-color: #974AF6 !important;
+    border: none !important;
+    border-radius: none !important;
 }
 
 .form-control::-webkit-input-placeholder{color:#fff !important;opacity:1}
