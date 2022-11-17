@@ -1,12 +1,12 @@
 .theme-light {
     --color-1: #fff;
-    --color-2: #fbfbfe;
+    --color-2: rgb(235, 235, 235);
     --color-3: #747474;
     --bg-color: #454545;
   }
   .theme-dark {
     --color-1: #000;
-    --color-2: #2a2c2d;
+    --color-2: rgb(46, 46, 46) ;
     --color-3: #202020;
     --bg-color: #ffffff;
 }
@@ -32,7 +32,7 @@ body{
     background-color: #454545 !important;
 }
 .text-gray-800{
-    color:  rgb(235, 235, 235) !important;
+    color: var(--color-2) !important;
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item, .sidebar .nav-item .collapsing .collapse-inner .collapse-item{
