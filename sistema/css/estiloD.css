@@ -81,7 +81,7 @@ a{color: var(--color-1) !important};
 }
 
 .text-white{
-    color: var(--color-1);
+    color: var(--color-1) !important;
 }
 
 .form-control::-webkit-input-placeholder{color:var(--color-1)  !important;opacity:1}
