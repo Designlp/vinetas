@@ -9,7 +9,7 @@
   .theme-dark {
     --color-1: rgb(58, 58, 58);
     --color-2: rgb(46, 46, 46) ;
-    --color-3: #505050;
+    --color-3: rgba(80, 80, 80, 0.274);
     --color-4: #dddddd;
     --color-5: #dddddd;
     --bg-color: #ffffff;
