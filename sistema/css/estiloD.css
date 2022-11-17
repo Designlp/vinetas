@@ -2,12 +2,16 @@
     --color-1: #fff;
     --color-2: rgb(235, 235, 235);
     --color-3: #747474;
+    --color-4: #454545;
+    --color-5: #525252;
     --bg-color: #454545;
   }
   .theme-dark {
-    --color-1: #000;
+    --color-1: rgb(58, 58, 58);
     --color-2: rgb(46, 46, 46) ;
-    --color-3: #202020;
+    --color-3: #505050;
+    --color-4: #dddddd;
+    --color-5: #dddddd;
     --bg-color: #ffffff;
 }
 
@@ -29,7 +33,7 @@ body{
     color: var(--color-1) !important;
 }
 .bg-white{
-    background-color: #454545 !important;
+    background-color: var(--color-4) !important;
 }
 .text-gray-800{
     color: var(--color-2) !important;
@@ -39,7 +43,7 @@ body{
     color: var(--color-1) !important;
 }
 .card{
-    background-color: #525252 !important;
+    background-color: var(--color-5) !important;
     border: none !important;
     border-radius: none !important;
 }
@@ -81,7 +85,7 @@ a{color: var(--color-1) !important};
 .form-control:-ms-input-placeholder{color:var(--color-1) !important;opacity:1}
 .form-control::-ms-input-placeholder{color:var(--color-1) !important;opacity:1}
 .form-control::placeholder{color:var(--color-1) !important;opacity:1}
-.form-control:disabled,.form-control[readonly]{background-color:#fff !important;opacity:1}
+.form-control:disabled,.form-control[readonly]{background-color:var(--color-1) !important;opacity:1}
 
 
 
