@@ -106,7 +106,7 @@ if ($row_empresa > 0) {
 						<p class="ml-auto"><strong>La Paz, </strong><?php echo fechaPeru(); ?></p>
 
 						<label id="switch" class="switch">
-							<input type="checkbox" onchange="toggleTheme()" id="slider">
+							<input class="botonTheme" type="checkbox" onchange="toggleTheme()" id="slider">
 							<span class="slider round"></span>
 						</label>
 					</div>
