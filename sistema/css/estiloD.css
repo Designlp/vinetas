@@ -1,25 +1,25 @@
 .theme-light {
-    --color-primary: #0060df;
-    --color-secondary: #fbfbfe;
-    --color-accent: #fd6f53;
-    --font-color: #000000;
+    --color-1: #0060df;
+    --color-2: #fbfbfe;
+    --color-3: #fd6f53;
+    --bg-color: #454545;
   }
   .theme-dark {
-    --color-primary: #17ed90;
-    --color-secondary: #2a2c2d;
-    --color-accent: #12cdea;
-    --font-color: #ffffff;
+    --color-1: #17ed90;
+    --color-2: #2a2c2d;
+    --color-3: #747474;
+    --bg-color: #ffffff;
 }
 
 #wrapper #content-wrapper{
-    background-color: var(--color-secondary) !important;
+    background-color: var(--bg-color) !important;
 }
 .bg-gradient-primary{
-    background-color: #454545 !important;
+    background-color: var(--bg-color) !important;
     box-shadow: 10px 10px 10px 10px;
 }
 .form-control{
-    background-color: #747474 !important;
+    background-color: var(--color-3) !important;
     border: none;
     border-radius: 0px;
     padding: 24px;
