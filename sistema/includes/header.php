@@ -104,17 +104,17 @@ if ($row_empresa > 0) {
 					<div class="input-group">
 						<h6>Sistema de QR</h6>
 						<p class="ml-auto"><strong>La Paz, </strong><?php echo fechaPeru(); ?></p>
+
+						<label id="switch" class="switch">
+							<input type="checkbox" onchange="toggleTheme()" id="slider">
+							<span class="slider round"></span>
+						</label>
 					</div>
 
 					<!-- Topbar Navbar -->
 					<ul class="navbar-nav ml-auto">
 
 						<div class="topbar-divider d-none d-sm-block"></div>
-
-						<label id="switch" class="switch">
-							<input type="checkbox" onchange="toggleTheme()" id="slider">
-							<span class="slider round"></span>
-						</label>
 
 						<!-- Nav Item - User Information -->
 						<li class="nav-item dropdown no-arrow">
