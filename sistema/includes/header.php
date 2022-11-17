@@ -111,6 +111,11 @@ if ($row_empresa > 0) {
 
 						<div class="topbar-divider d-none d-sm-block"></div>
 
+						<label id="switch" class="switch">
+							<input type="checkbox" onchange="toggleTheme()" id="slider">
+							<span class="slider round"></span>
+						</label>
+
 						<!-- Nav Item - User Information -->
 						<li class="nav-item dropdown no-arrow">
 							<a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
