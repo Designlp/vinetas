@@ -1,13 +1,13 @@
 .theme-light {
     --color-1: #fff;
     --color-2: #fbfbfe;
-    --color-3: #fd6f53;
+    --color-3: #747474;
     --bg-color: #454545;
   }
   .theme-dark {
     --color-1: #000;
     --color-2: #2a2c2d;
-    --color-3: #747474;
+    --color-3: #202020;
     --bg-color: #ffffff;
 }
 
