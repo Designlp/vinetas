@@ -1,11 +1,11 @@
 .theme-light {
-    --color-1: #0060df;
+    --color-1: #fff;
     --color-2: #fbfbfe;
     --color-3: #fd6f53;
     --bg-color: #454545;
   }
   .theme-dark {
-    --color-1: #17ed90;
+    --color-1: #000;
     --color-2: #2a2c2d;
     --color-3: #747474;
     --bg-color: #ffffff;
@@ -23,10 +23,10 @@
     border: none;
     border-radius: 0px;
     padding: 24px;
-    color: #fff !important;
+    color: var(--color-1) !important;
 }
 body{
-    color: #fff !important;
+    color: var(--color-1) !important;
 }
 .bg-white{
     background-color: #454545 !important;
@@ -36,7 +36,7 @@ body{
 }
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item, .sidebar .nav-item .collapsing .collapse-inner .collapse-item{
-    color: #fff !important;
+    color: var(--color-1) !important;
 }
 .card{
     background-color: #525252 !important;
@@ -45,10 +45,10 @@ body{
 }
 
 input {
-    color: #fff !important;
+    color: var(--color-1) !important;
 }
 
-a{color:#fff !important};
+a{color: var(--color-1) !important};
 
 
 .sidebar .nav-item .collapse .collapse-inner .collapse-item:hover, .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover{
@@ -67,7 +67,7 @@ a{color:#fff !important};
 }
 
 .table{
-    color: #fff !important;
+    color: var(--color-1) !important;
 }
 
 .table .thead-dark th{
@@ -76,11 +76,11 @@ a{color:#fff !important};
     border: none !important;
 }
 
-.form-control::-webkit-input-placeholder{color:#fff !important;opacity:1}
-.form-control::-moz-placeholder{color:#fff !important;opacity:1}
-.form-control:-ms-input-placeholder{color:#fff !important;opacity:1}
-.form-control::-ms-input-placeholder{color:#fff !important;opacity:1}
-.form-control::placeholder{color:#fff !important;opacity:1}
+.form-control::-webkit-input-placeholder{color:var(--color-1)  !important;opacity:1}
+.form-control::-moz-placeholder{color:var(--color-1) !important;opacity:1}
+.form-control:-ms-input-placeholder{color:var(--color-1) !important;opacity:1}
+.form-control::-ms-input-placeholder{color:var(--color-1) !important;opacity:1}
+.form-control::placeholder{color:var(--color-1) !important;opacity:1}
 .form-control:disabled,.form-control[readonly]{background-color:#fff !important;opacity:1}
 
 
