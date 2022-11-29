@@ -81,7 +81,7 @@ if (!empty($_POST)) {
                   
                 <div class="form-group">
                     <label>Dependecia</label>
-                    <select name="dependencia" id="dependencia" class="form-control">
+                    <select name="dependencia" id="dependencia" class="form-control seleccionarROL">
                     <option>---Selecciona una Dependencia---</option>     
                         <?php
                         $query_rol = mysqli_query($conexion, " select * from dependencia");
