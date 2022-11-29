@@ -18,6 +18,12 @@
 #wrapper #content-wrapper{
     background-color: var(--bg-color) !important;
 }
+#wrapper{
+  margin: 18px;
+}
+body{
+  background: var(--bg-color) ;
+}
 .bg-gradient-primary{
     background-color: var(--bg-color) !important;
     box-shadow: 10px 10px 10px 10px;
