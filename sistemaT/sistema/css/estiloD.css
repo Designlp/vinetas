@@ -197,5 +197,5 @@ a{color: var(--color-1) !important};
     font-size: 20px;
   }
   .sidebar{
-    width: 19rem;
+    width: 19rem !important;
   }
