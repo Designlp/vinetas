@@ -203,7 +203,7 @@ img {
 height: 151px;
 }
 a:link {
-  color: green;
+  color: #974AF6;
   background-color: transparent;
   text-decoration: none;
 }
@@ -215,9 +215,10 @@ a:visited {
 }
 
 a:hover {
-  color: red;
+  color: #fff;
   background-color: transparent;
-  text-decoration: underline;
+  text-decoration: none;
+
 }
 
 a:active {

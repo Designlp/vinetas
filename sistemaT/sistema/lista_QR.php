@@ -74,14 +74,14 @@
 						if ($result > 0) {
 							while ($data = mysqli_fetch_assoc($query)) { ?>
 								<tr>
-									<td><?php echo $data['idusuario']; ?></td>
+									<td><?php echo $data['IDUSER']; ?></td>
 									<td><?php echo $data['nombre']; ?></td>
 				
 									<td><?php echo $data['qr']; ?></td>
 									<?php if ($_SESSION['rol'] == 1) { ?>
 									<td>
-										<a href="editar_usuario.php?id=<?php echo $data['idusuario']; ?>" class="btn btn-success"><i class='fas fa-edit'></i> Editar</a>
-										<form action="eliminar_usuario.php?id=<?php echo $data['idusuario']; ?>" method="post" class="confirmar d-inline">
+										<a href="editar_usuario.php?id=<?php echo $data['IDUSER']; ?>" class="btn btn-success"><i class='fas fa-edit'></i> Editar</a>
+										<form action="eliminar_usuario.php?id=<?php echo $data['IDUSER']; ?>" method="post" class="confirmar d-inline">
 											<button class="btn btn-danger" type="submit"><i class='fas fa-trash-alt'></i> </button>
 										</form>
 									</td>
