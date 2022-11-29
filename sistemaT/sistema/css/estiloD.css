@@ -219,3 +219,8 @@ a{color: var(--color-1) !important};
   .seleccionarROL{
     background: var(--bg-color) !important;
   }
+
+  .table-bordered td, .table-bordered th{
+    border: 1px solid var(--bg-color);
+    background: var(--hover);
+  }
