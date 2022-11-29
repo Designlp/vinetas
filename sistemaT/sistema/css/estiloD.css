@@ -188,3 +188,11 @@ a{color: var(--color-1) !important};
   .sidebar .nav-item .collapse .collapse-inner .collapse-item:hover, .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover{
     background: var(--hover)
   }
+
+
+  .sidebar .nav-item .nav-link{
+    width: 18rem;
+  }
+  .sidebar .nav-item .nav-link span{
+    font-size: 20px;
+  }
