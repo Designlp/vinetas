@@ -29,8 +29,8 @@
 .form-control{
     background-color: var(--color-3) !important;
     border: none;
-    border-radius: 0px;
-    padding: 24px;
+    border-radius: 5px;
+    margin: 15px;
     color: var(--color-1) !important;
 }
 body{
