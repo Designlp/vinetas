@@ -144,7 +144,7 @@ input{
     display: block;
     height: 50px;
     width: 100%;
-color: #080710;
+color: #fff;
     background-color: rgba(255, 255, 255, 0.096);
     border-radius: 3px;
     padding: 0 10px;
@@ -156,7 +156,7 @@ color: #080710;
    color: #8d8aa8;
 }
 label{
-    color: #080710;
+    color: #fff;
     
 }
 
