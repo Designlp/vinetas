@@ -68,7 +68,7 @@
 						<?php
 						include "../conexion.php";
 
-						$query = mysqli_query($conexion, "SELECT u.idusuario, u.nombre, u.correo, u.usuario, u.id_qr as qr FROM usuario u INNER JOIN rol r ON u.rol = r.idrol");
+						$query = mysqli_query($conexion, "SELECT u.IDUsuario AS IDUSER, u.Nombres, u.Apellidos, u.CorreoElectronico, u.IDQr as qr FROM usuario u INNER JOIN roles r ON u.IDRol = r.IDRol WHERE u.IDQr NOT LIKE '1'");
 						$result = mysqli_num_rows($query);
 						if ($result > 0) {
 							while ($data = mysqli_fetch_assoc($query)) { ?>
