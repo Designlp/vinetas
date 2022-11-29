@@ -19,7 +19,7 @@
     background-color: var(--bg-color) !important;
 }
 .bg-gradient-primary{
-    background-color: var(--bg-color) !important;
+    background-color: transparent !important;
     box-shadow: 10px 10px 10px 10px;
 }
 .form-control{
