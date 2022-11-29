@@ -95,7 +95,7 @@ if ($row_empresa > 0) {
                         }
                     </style>
     
-				<nav class="navbar navbar-expand navbar-light bg-gradient-primary  text-white topbar mb-4 static-top shadow">
+				<nav class="navbar navbar-expand navbar-light bg-gradient-primaryy  text-white topbar mb-4 static-top shadow">
 
 					<!-- Sidebar Toggle (Topbar) -->
 					<button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
