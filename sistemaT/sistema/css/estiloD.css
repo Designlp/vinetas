@@ -67,7 +67,9 @@ background-color: #FB37FF;
     border: none !important;
     border-radius: none !important;
 }
-
+.gbh{
+  margin-top: 5px !important;
+}
 input {
     color: var(--color-1) !important;
 }

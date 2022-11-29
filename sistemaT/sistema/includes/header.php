@@ -107,7 +107,7 @@ if ($row_empresa > 0) {
 							<input class="botonTheme" type="checkbox" onchange="toggleTheme()" id="slider">
 							<span class="slider round"></span>
 						</label>
-						<p class="ml-auto"><strong>La Paz, </strong><?php echo fechaPeru(); ?></p>
+						<p class="ml-auto gbh"><strong>La Paz, </strong><?php echo fechaPeru(); ?></p>
 					</div>
 
 					<!-- Topbar Navbar -->
