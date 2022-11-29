@@ -48,7 +48,7 @@ if (!empty($_POST)) {
           
                 <div class="form-group">
                     <label>Usuario</label>
-                    <select name="rol" id="rol" class="form-control">
+                    <select name="rol" id="rol" class="form-control seleccionarROL">
                     <option>---Selecciona un Usuario---</option>     
                         <?php
                         $query_rol = mysqli_query($conexion, " select * from usuario WHERE IDRol=3");

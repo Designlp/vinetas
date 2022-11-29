@@ -86,7 +86,7 @@ if ($result_sql == 0) {
         </div>
         <div class="form-group">
                     <label>Rol</label>
-                    <select name="rol" id="rol" class="form-control">
+                    <select name="rol" id="rol" class="form-control seleccionarROL">
                         <?php
                         $query_rol = mysqli_query($conexion, " select * from roles");
                         mysqli_close($conexion);

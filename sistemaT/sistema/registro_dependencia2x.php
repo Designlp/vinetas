@@ -72,7 +72,7 @@ if (!empty($_POST)) {
           
                 <div class="form-group">
                     <label>Usuario</label>
-                    <select name="rol" id="rol" class="form-control">
+                    <select name="rol" id="rol" class="form-control seleccionarROL">
                     <option>---Selecciona un Usuario---</option>     
                         <?php
                         $query_rol = mysqli_query($conexion, "select u.IDUsuario as idus,u.Nombres as nombre from usuario u where u.IDRol=4 and u.IDUsuario NOT IN (SELECT n.IDUsuario FROM pasante n WHERE n.IDUsuario = u.IDUsuario );

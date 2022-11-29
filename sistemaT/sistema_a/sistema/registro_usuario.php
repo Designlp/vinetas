@@ -96,7 +96,7 @@ if (!empty($_POST)) {
                 </div>
                 <div class="form-group">
                    
-                            <select name="rol" id="rol" class="form-control">
+                            <select name="rol" id="rol" class="form-control seleccionarROL" >
                             <option>---Selecciona un Rol---</option>   
                                 <?php
                                 $query_rol = mysqli_query($conexion, " select * from roles");

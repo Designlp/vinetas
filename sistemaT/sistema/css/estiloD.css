@@ -33,7 +33,7 @@ body{
   background-color: transparent !important;
 }
 .form-control{
-    background-color: var(--bg-color) !important;
+    background-color: var(--hover) !important;
     border: none;
     border-radius: 5px;
     margin: 15px;
@@ -215,3 +215,6 @@ a{color: var(--color-1) !important};
   }
 
 
+  .seleccionarROL{
+    background: var(--bg-color) !important;
+  }
