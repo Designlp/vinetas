@@ -5,6 +5,7 @@
   --color-4: #454545;
   --color-5: #525252;
   --bg-color: #1F1D2B;
+  --hover: rgba(255, 255, 255, 0.199) !important;
 }
 .theme-dark {
   --color-1: rgb(58, 58, 58);
@@ -13,6 +14,7 @@
   --color-4: #dddddd;
   --color-5: #0000001c;
   --bg-color: #fff3e8;
+  --hover: rgba(0, 0, 0, 0.199) !important;
   
 }
 #wrapper #content-wrapper{
@@ -184,5 +186,5 @@ a{color: var(--color-1) !important};
     border-radius: 50%;
   }
   .sidebar .nav-item .collapse .collapse-inner .collapse-item:hover, .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover{
-    background: rgba(255, 255, 255, 0.199) !important;
+    background: var(--hover)
   }
