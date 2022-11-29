@@ -5,7 +5,7 @@
   --color-4: #454545;
   --color-5: #525252;
   --bg-color: #1F1D2B;
-  --hover: rgba(255, 255, 255, 0.116) !important;
+  --hover: rgba(255, 255, 255, 0.096) !important;
 }
 .theme-dark {
   --color-1: rgb(58, 58, 58);
@@ -14,7 +14,7 @@
   --color-4: #dddddd;
   --color-5: #0000001c;
   --bg-color: #fff3e8;
-  --hover: rgba(0, 0, 0, 0.123) !important;
+  --hover: rgba(0, 0, 0, 0.096) !important;
   
 }
 #wrapper #content-wrapper{
