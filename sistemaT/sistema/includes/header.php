@@ -50,6 +50,7 @@ if ($row_empresa > 0) {
 	<!-- Custom styles for this template-->
 	<link href="css/sb-admin-2.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="css/estiloD.css">
 
 </head>
 

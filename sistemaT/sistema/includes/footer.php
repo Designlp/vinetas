@@ -52,6 +52,7 @@
 <script src="js/dataTables.bootstrap4.min.js"></script>
 <script src="js/sweetalert2@10.js"></script>
 <script type="text/javascript" src="js/producto.js"></script>
+<script type="text/javascript" src="js/theme.js"></script>
 <script type="text/javascript">
   $(document).ready(function() {
     $('#table').DataTable({
