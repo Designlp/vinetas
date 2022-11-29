@@ -61,7 +61,7 @@
             mysqli_close($conexion);
             ?>
         
-           <select id="idusuario" name="idusuario" class="form-control">
+           <select id="idusuario" name="idusuario" class="form-control seleccionarROL">
            <option>---Selecciona un Usuario---</option>   
              <?php
               if ($resultado_proveedor > 0) {
