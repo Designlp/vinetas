@@ -203,6 +203,7 @@ img {
 height: 151px;
 }
 a:link {
+  paddin-top: 4px;
   color: #974AF6;
   background-color: transparent;
   text-decoration: none;
