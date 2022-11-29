@@ -68,12 +68,14 @@ background-color: #FB37FF;
     border-radius: none !important;
 }
 .gbh{
-  margin-top: 5px !important;
+  margin-top: 6px !important;
 }
 input {
     color: var(--color-1) !important;
 }
-
+.textNames{
+  font-size: 20px;
+}
 a{color: var(--color-1) !important};
 
 
