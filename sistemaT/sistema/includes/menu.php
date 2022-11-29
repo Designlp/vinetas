@@ -12,10 +12,10 @@
 	</a>
 
 	<!-- Divider -->
-	<hr class="sidebar-divider my-0">
+	<!-- <hr class="sidebar-divider my-0"> -->
 
 	<!-- Divider -->
-	<hr class="sidebar-divider">
+	<!-- <hr class="sidebar-divider"> -->
  </br>
 	<!-- Heading -->
 	<div class="sidebar-heading">
