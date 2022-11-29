@@ -209,3 +209,10 @@ a{color: var(--color-1) !important};
   .sidebar-dark .sidebar-heading{
     padding-top: 46px !important;
   }
+
+  .topbar .topbar-divider{
+    display: none;
+  }
+
+
+  
