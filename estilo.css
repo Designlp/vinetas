@@ -1,6 +1,28 @@
+.theme-light {
+    --background: #1F1D2B;
+    --color-1: #BCBCBC;
+    --color-2: #FFFFFF;
+    --color-3: #cfcfcf;
+    --color-4: #D7D7D7;
+    --color-5: #E2E2E2;
+
+    --backColor: rgba(255, 255, 255, 0.095);
+
+  }
+  .theme-dark {
+    --background: #fff3e8;
+    --color-1: rgb(29, 29, 29);
+    --color-2: rgb(53, 53, 53);
+    --color-3: #2c2c2c;
+    --color-4: #2c2c2c;
+    --color-5: #2e2e2e;
+    --backColor: linear-gradient(103.91deg, #9B51E0 21.01%, rgb(48, 130, 237) 100%);
+
+}
+
 body {
     margin: 0;
-    background-color: #1F1D2B;
+    background-color: var(--background);
     font-family: "Poppins" !important;
   }
   .textoCard{
@@ -10,7 +32,12 @@ body {
     display: none;
   }
   a.linkaa{
-    color: #cfcfcf !important;
+    color: var(--color-3) !important;
+    text-decoration: none;
+  }
+
+  a.linkaaa{
+    color: #FFF !important;
     text-decoration: none;
   }
   .landingpage {
@@ -20,7 +47,7 @@ body {
     max-width: 1300px;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: #1F1D2B;
+    background-color: var(--background);
   }
   .landingpage::before {
     content: "";
@@ -42,7 +69,7 @@ body {
     background-color: #18B2DE;
     filter: blur(80px);
   }
-  
+
   .landingpage .navbar {
     display: flex;
     align-items: center;
@@ -85,8 +112,8 @@ body {
   }
   .navbar .hamburger {
     display: none;
-    color: #D7D7D7;
-    background-color: #1F1D2B;
+    color: var(--color-4);
+    background-color: var(--background);
     border: none;
     margin-right: 10px;
   }
@@ -96,7 +123,7 @@ body {
     border: none;
     width: 161px;
     height: 45px;
-    color: #BCBCBC;
+    color: var(--color-1);
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;
@@ -125,11 +152,11 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    color: #BCBCBC;
+    color: var(--color-1);
   }
   .navbar .navlink a{
     text-decoration: none;
-    color: #cfcfcf;
+    color: var(--color-3);
   }
   .navbar .navlink.selectedlink {
     background: linear-gradient(93.51deg, #9B51E0 2.84%, #3081ED 99.18%);
@@ -157,7 +184,7 @@ body {
   .box .infobox-boldtext {
     margin: 0;
     font-family: Poppins;
-    color: #FFFFFF;
+    color: var(--color-2);
     font-size: 65px;
     font-weight: 600;
     line-height: 60px;
@@ -168,7 +195,7 @@ body {
   .box .infobox-slimtext {
     margin: 24px 0;
     font-family: Poppins;
-    color: #FFFFFF;
+    color: var(--color-2);
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
@@ -183,7 +210,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1F1D2B;
+    background-color: var(--background);
     padding: 8px 38px;
     border-radius: 16px;
     font-family: "Poppins";
@@ -191,7 +218,7 @@ body {
     font-weight: 600;
     font-size: 13px;
     letter-spacing: -1px;
-    color: #FFFFFF;
+    color: var(--color-2);
   }
   .box .infobox-createbtn {
     cursor: pointer;
@@ -201,14 +228,14 @@ body {
     align-items: center;
     background-color: transparent;
     padding: 8px 38px;
-    border: 1px solid #D7D7D7;
+    border: 1px solid var(--color-4);
     border-radius: 16px;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
     letter-spacing: -1px;
-    color: #FFFFFF;
+    color: var(--color-2);
   }
   .box .infobox .selected {
     border: none;
@@ -243,7 +270,7 @@ body {
     align-items: center;
     font-family: "Poppins";
     font-style: normal;
-    color: #FFFFFF;
+    color: var(--color-2);
     font-weight: 600;
     font-size: 12px;
   }
@@ -263,7 +290,7 @@ body {
     flex-direction: column;
     align-items: flex-end;
     font-family: "Poppins";
-    color: #FFFFFF;
+    color: var(--color-2);
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
@@ -289,7 +316,7 @@ body {
     margin: 0;
     font-family: "Poppins";
     font-style: normal;
-    color: #FFFFFF;
+    color: var(--color-2);
     font-weight: 500;
     font-size: 48px;
     line-height: 72px;
@@ -298,7 +325,7 @@ body {
     margin: 0;
     font-family: "Poppins";
     font-style: normal;
-    color: #D7D7D7;
+    color: var(--color-4);
     font-weight: 600;
     font-size: 18px;
     line-height: 36px;
@@ -323,7 +350,7 @@ body {
     align-self: center;
     font-family: "Poppins";
     font-style: normal;
-    color: #FFFFFF;
+    color: var(--color-2);
     font-weight: 500;
     font-size: 40px;
     line-height: 72px;
@@ -337,7 +364,7 @@ body {
     font-size: 20px;
     line-height: 36px;
     letter-spacing: 0.5px;
-    color: #E2E2E2;
+    color: var(--color-5);
   }
   .started-items {
     padding: 60px 80px;
@@ -366,7 +393,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    color: #FFFFFF;
+    color: var(--color-2);
   }
   .started-items-item {
     display: flex;
@@ -392,7 +419,7 @@ body {
     font-weight: 500;
     font-size: 36px;
     letter-spacing: -1px;
-    color: #FFFFFF;
+    color: var(--color-2);
   }
   .discover-items {
     display: grid;
@@ -407,7 +434,7 @@ body {
     align-self: center;
     width: 161px;
     height: 40px;
-    border: 1px solid #D7D7D7;
+    border: 1px solid var(--color-4);
     border-radius: 10px;
     background-color: transparent;
     font-family: "Poppins";
@@ -415,7 +442,7 @@ body {
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 1.5px;
-    color: #BCBCBC;
+    color: var(--color-1);
   }
   
   .footer-main {
@@ -425,7 +452,7 @@ body {
     font-weight: 500;
     font-size: 30px;
     line-height: 40px;
-    color: #FFFFFF;
+    color: var(--color-2);
   }
   .footer-navigate {
     display: flex;
@@ -440,7 +467,7 @@ body {
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
-    color: #FFFFFF;
+    color: var(--color-2);
   }
   .footer-navigate .nav p {
     font-family: "Poppins";
@@ -449,7 +476,7 @@ body {
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.03em;
-    color: #D7D7D7;
+    color: var(--color-4);
   }
   
   .footer2 p {
@@ -488,7 +515,7 @@ body {
     font-weight: 600;
     font-size: 12px;
     line-height: 24px;
-    color: #FFFFFF;
+    color: var(--color-2);
   }
   .item-date {
     font-family: "Poppins";
@@ -496,7 +523,7 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
-    color: #BCBCBC;
+    color: var(--color-1);
   }
   
   .filters {
@@ -511,7 +538,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    color: #FFFFFF;
+    color: var(--color-2);
   }
   .filters .filter svg {
     margin-right: 5px;
@@ -530,7 +557,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
-    color: #FFFFFF;
+    color: var(--color-2);
   }
   .filters .filterbtn svg {
     margin-right: 5px;
@@ -858,3 +885,83 @@ body {
     justify-content: space-between;
 
   }
+
+
+
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 13px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch .botonTheme {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  /* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 0px;
+    bottom: 4px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    box-shadow: 0 0px 15px #2020203d;
+    background: #974AF6;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .switch input:checked + .slider {
+    background-color: #2196f3;
+  }
+  
+  .switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+  }
+  
+  .switch input:checked + .slider:before {
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
+    background: #974AF6;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
+      
+
+
+      .started-items-item{
+        background: var(--backColor);
+      }
