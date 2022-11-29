@@ -184,5 +184,5 @@ a{color: var(--color-1) !important};
     border-radius: 50%;
   }
   .sidebar .nav-item .collapse .collapse-inner .collapse-item:hover, .sidebar .nav-item .collapsing .collapse-inner .collapse-item:hover{
-    background: rgba(255, 255, 255, 0.541) !important;
+    background: rgba(255, 255, 255, 0.363) !important;
   }
