@@ -163,7 +163,7 @@ label{
 button{
     margin-top: 25px;
     width: 100%;
-    background: linear-gradient(103.91deg, #9B51E0 21.01%, rgba(48, 129, 237, 0.8) 100%);
+    background: linear-gradient(90deg, #B224EF 0%, #7579FF 100%);
     border-radius: 15px;
     color: #f6f5ff;
     
