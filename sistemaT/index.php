@@ -76,7 +76,7 @@ body{
     
 }
 .background{
-           background: #F6F6F6;
+           background: #1F1D2B;
     background-image: url("sistema/img/bg.jpg");
     width: 100%;
     height:100%;
@@ -94,6 +94,18 @@ background-attachment: fixed;
 
 
 }
+
+.background::before{
+  content: "";
+  position: absolute;
+  width: 123px;
+  height: 123px;
+  left: 60%;
+  top: 138px;
+  filter: blur(90px);
+  background-color: #FB37FF;
+}
+
 
 form{
     height: 580px;
@@ -115,7 +127,7 @@ form *{
 form h3{
        font-family: 'Poppins',sans-serif;
  
-     color: #080710;
+     color: #fff;
     font-size: 20px;
     font-weight: 500;
     line-height: 22px;
@@ -133,7 +145,7 @@ input{
     height: 50px;
     width: 100%;
 color: #080710;
-    background-color: #EAF0F7;
+    background-color: rgba(255, 255, 255, 0.096);
     border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
