@@ -47,7 +47,7 @@ filter: blur(90px);
 background-color: #FB37FF;
 }
 .bg-white{
-    background-color: var(--color-4) !important;
+    background-color: var(--bg-color) !important;
 }
 .text-gray-800{
     color: var(--color-2) !important;
