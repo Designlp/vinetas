@@ -32,6 +32,16 @@
 body{
     color: var(--color-1) !important;
 }
+body::before{
+  content: "";
+position: absolute;
+width: 123px;
+height: 123px;
+left: 60%;
+top: 138px;
+filter: blur(90px);
+background-color: #FB37FF;
+}
 .bg-white{
     background-color: var(--color-4) !important;
 }
