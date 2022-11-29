@@ -64,7 +64,7 @@ background-color: #FB37FF;
     color: var(--color-1) !important;
 }
 .card{
-    background-color: var(--color-5) !important;
+    background-color: var(--hover) !important;
     border: none !important;
     border-radius: none !important;
 }
